@@ -56,15 +56,63 @@
 		EF67FEA024A62E490092FF1B /* MyNotesApp */ = {
 			isa = PBXGroup;
 			children = (
-				EF67FEA124A62E490092FF1B /* AppDelegate.swift */,
-				EF67FEA324A62E490092FF1B /* SceneDelegate.swift */,
-				EF67FEA524A62E490092FF1B /* ViewController.swift */,
-				EF67FEA724A62E490092FF1B /* Main.storyboard */,
-				EF67FEAA24A62E4B0092FF1B /* Assets.xcassets */,
-				EF67FEAC24A62E4B0092FF1B /* LaunchScreen.storyboard */,
-				EF67FEAF24A62E4B0092FF1B /* Info.plist */,
+				EF67FEB524A62FD80092FF1B /* Application Delegate */,
+				EF67FEB624A630310092FF1B /* View Controllers */,
+				EF67FEB824A6306A0092FF1B /* StoryBoards */,
+				EF67FEBA24A630A30092FF1B /* Supporting Files */,
+				EF67FEB924A630930092FF1B /* Resources */,
 			);
 			path = MyNotesApp;
+			sourceTree = "<group>";
+		};
+		EF67FEB524A62FD80092FF1B /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EF67FEA124A62E490092FF1B /* AppDelegate.swift */,
+				EF67FEA324A62E490092FF1B /* SceneDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		EF67FEB624A630310092FF1B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF67FEB724A630410092FF1B /* Root View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EF67FEB724A630410092FF1B /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF67FEA524A62E490092FF1B /* ViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
+		EF67FEB824A6306A0092FF1B /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				EF67FEA724A62E490092FF1B /* Main.storyboard */,
+				EF67FEAC24A62E4B0092FF1B /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		EF67FEB924A630930092FF1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF67FEAA24A62E4B0092FF1B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF67FEBA24A630A30092FF1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF67FEAF24A62E4B0092FF1B /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyNotesApp/Info.plist;
+				INFOPLIST_FILE = "MyNotesApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyNotesApp/Info.plist;
+				INFOPLIST_FILE = "MyNotesApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
