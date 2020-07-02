@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC940785C4E40D961CDB2E1B /* Pods_MyNotesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B16BDCB01BC251EC6ACD8E /* Pods_MyNotesApp.framework */; };
 		EF67FEA224A62E490092FF1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67FEA124A62E490092FF1B /* AppDelegate.swift */; };
 		EF67FEA424A62E490092FF1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67FEA324A62E490092FF1B /* SceneDelegate.swift */; };
 		EF67FEA624A62E490092FF1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67FEA524A62E490092FF1B /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17B16BDCB01BC251EC6ACD8E /* Pods_MyNotesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNotesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F5963B9B31A6497DAEA326 /* Pods-MyNotesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotesApp.debug.xcconfig"; path = "Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A46BCBF58B03CB19EA349881 /* Pods-MyNotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotesApp.release.xcconfig"; path = "Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp.release.xcconfig"; sourceTree = "<group>"; };
 		EF67FE9E24A62E490092FF1B /* MyNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF67FEA124A62E490092FF1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF67FEA324A62E490092FF1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC940785C4E40D961CDB2E1B /* Pods_MyNotesApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65FC0DF626E249CF0CE04D5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B16BDCB01BC251EC6ACD8E /* Pods_MyNotesApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC705D4BF521165C0FD531A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72F5963B9B31A6497DAEA326 /* Pods-MyNotesApp.debug.xcconfig */,
+				A46BCBF58B03CB19EA349881 /* Pods-MyNotesApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF67FE9524A62E490092FF1B = {
 			isa = PBXGroup;
 			children = (
 				EF67FEA024A62E490092FF1B /* MyNotesApp */,
 				EF67FE9F24A62E490092FF1B /* Products */,
+				CC705D4BF521165C0FD531A7 /* Pods */,
+				65FC0DF626E249CF0CE04D5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF67FEB224A62E4B0092FF1B /* Build configuration list for PBXNativeTarget "MyNotesApp" */;
 			buildPhases = (
+				8159437FADC5DA3E0D77744B /* [CP] Check Pods Manifest.lock */,
 				EF67FE9A24A62E490092FF1B /* Sources */,
 				EF67FE9B24A62E490092FF1B /* Frameworks */,
 				EF67FE9C24A62E490092FF1B /* Resources */,
+				4512D6B71E33E436E067EF0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +229,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4512D6B71E33E436E067EF0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8159437FADC5DA3E0D77744B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyNotesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF67FE9A24A62E490092FF1B /* Sources */ = {
@@ -354,6 +423,7 @@
 		};
 		EF67FEB324A62E4B0092FF1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F5963B9B31A6497DAEA326 /* Pods-MyNotesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -371,6 +441,7 @@
 		};
 		EF67FEB424A62E4B0092FF1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46BCBF58B03CB19EA349881 /* Pods-MyNotesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

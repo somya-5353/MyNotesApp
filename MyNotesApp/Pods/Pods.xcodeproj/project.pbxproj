@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C69FD195D927D5F6641888DF202B847 /* BLTNViewPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62672E1D5BB7DC2D37FF4FF541D7C55D /* BLTNViewPosition.swift */; };
+		0E58765E9B4CA4CBA152D421051F013A /* BLTNInterfaceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6628238860AD368BF794F8A35EF76030 /* BLTNInterfaceBuilder.swift */; };
+		15E1CBC183FA9F6508D3D84B66B2500D /* BLTNPageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0AA61B2C90DC0356DB886472C62AB4 /* BLTNPageItem.m */; };
+		18E7B3199DE5A2E0368B99ED9B4E14F6 /* BulletinBoard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DECDC84112CD9322BFAC65FB2C806B /* BulletinBoard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29CD13DA82635EB3264267DFA876D697 /* UIButton+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849709B51088840C2D83AC86C57F6C0A /* UIButton+BackgroundColor.swift */; };
+		2AAFDD22688A0E48D51728131119FAB0 /* UIView+RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3FECB33B67E5C08DD93D02AB1C616 /* UIView+RoundedView.swift */; };
+		3283F90166502961B53731378738EA3B /* BulletinBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1923179EF08F0572CC83D5457BABDD /* BulletinBackgroundView.swift */; };
+		391166A441512089CDABF69232E956FF /* BulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D563B8CE93801FF8814346BCCE99A /* BulletinViewController.swift */; };
+		439C665A5CEE744E7F34A98885BEF2F8 /* BLTNBoard.h in Headers */ = {isa = PBXBuildFile; fileRef = FB99702CC706D335C33454ACF02EA3B2 /* BLTNBoard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C3ABFAD7435D909018A4E7A40AE6CE9 /* BLTNActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6BCBF7F7203F9C9C6A09BD1BAEDD1A /* BLTNActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		562E6945D03B9AE27D800BF66D6E1CBD /* ContinuousMaskLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E11D87BF6418B4AB3E645BEC726E63 /* ContinuousMaskLayer.swift */; };
+		571346491E2824CF44B25E05FFAF1D9F /* BLTNTitleLabelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FC562F770610F732202482D6C9FB6 /* BLTNTitleLabelContainer.swift */; };
+		5FECA57AEDE80F52C4B5325D6CE72191 /* BulletinPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA1A05200656FC329C30C0752A546A /* BulletinPresentationAnimationController.swift */; };
+		62640011D5A5D894423FA3B5EA5FEAA9 /* BLTNItemAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3192396ECD49EDA815E52AAE20A9DA29 /* BLTNItemAppearance.swift */; };
+		71829594D237F34FEB68ACF17D8F5645 /* BulletinCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77321C17C1A45F28660A194EA928EEBF /* BulletinCloseButton.swift */; };
+		74FD6A05A24AFE1E0C73E34D1D82D9DE /* BulletinBoard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B11FD27C957B2464B5358A137FA48C4D /* BulletinBoard-dummy.m */; };
+		81A992E652B895058A5C5E6CBF91B479 /* UIColor+Luminance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB947355FECA0EE8AA5D6339A49014 /* UIColor+Luminance.swift */; };
+		89D00AC51376EE30DC96D3ED05E244DE /* Pods-MyNotesApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77E855AC8AAAA1430FACBF01C989D5E4 /* Pods-MyNotesApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A4D255E3E497EF4C37546784F2D1A7A /* BulletinDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7542C6DB4091D1B5A745F06B50A266F6 /* BulletinDismissAnimationController.swift */; };
+		900F1464C2EA7D032A785BA93999C235 /* BLTNBackgroundViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA750A9EAADCEB5A82A19110360544 /* BLTNBackgroundViewStyle.swift */; };
+		938B54EF8194498DEBE3145404218AE4 /* Highlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DA6A115E42298867AAF0048551D4EB /* Highlighter.swift */; };
+		93F685CD37274E9DF70B70566F99FC5C /* AnimationChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6144202253562F0D966F49F3D7114 /* AnimationChain.swift */; };
+		945A85369DABA8A7BE6194C80A17D092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		9F840081416C87E400CBEC963E25027B /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15217F60CF5E1948A68B38669665BA43 /* Deprecations.swift */; };
+		ACC16F054AA6667EF0CC93F5095A584D /* BLTNBoardSwiftSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DB7B545A9C39A19FC7D23EB6BEF2EEE0 /* BLTNBoardSwiftSupport.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B179826AFB27ADA71FD30F38592B7B62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		B3DFBFD0EECA669AE228F1AD4476DAB6 /* BLTNSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF15591161B871C2201CE56F4AEB529 /* BLTNSpacing.swift */; };
+		B6D65F143AE951F748E8B8D4471B3F91 /* BLTNContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA90730DC9E389A0843C786414D75F /* BLTNContainerView.swift */; };
+		C2DCEF4BC71E94EBFA2E365BA8D8DB00 /* HighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34BDCD3E18DEB43E699252B0E24BE50 /* HighlightButton.swift */; };
+		C40599C5A913BB2AB363C96DF5F91964 /* BLTNItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 97338F27188DFE58E37073C586EFF9B0 /* BLTNItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7879C94CA800A001DD43C22EA4F62A2 /* BLTNHighlightButtonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B35805363CA158A44CF227FE8B51B4 /* BLTNHighlightButtonWrapper.swift */; };
+		D4CB0DA440FBBCE3CD22C13D2D080D37 /* BLTNItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52A9EF375A13FF3657126F1D937FCA /* BLTNItemManager.swift */; };
+		D5C9BC39F2D7C846D96354CF9D7C4094 /* BLTNPageItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2482A19FFCE03351FE3624DC6E94E936 /* BLTNPageItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92787F77BF0086D7ED23BCEF184307D /* BLTNActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 748034D8F81634460179D142CD6B93C2 /* BLTNActionItem.m */; };
+		DA980ABCEA3D7F601A70E6A3B54FA797 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		E3623B4C7E23FA2B372F95CE35808EC4 /* BulletinSwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11032F748ED7661BE342DE730CC6B349 /* BulletinSwipeInteractionController.swift */; };
+		EF27BA53D1142A338B6528D46CE043D3 /* RoundedViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB33DBA8F0F0829628EA0648DFCB3E /* RoundedViewProtocol.swift */; };
+		F03EE07A4CE175F2BB09C90DAB03AF22 /* Pods-MyNotesApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B30EE9AEC8A462CB8DC4061B722770 /* Pods-MyNotesApp-dummy.m */; };
+		F2330AAF538DD08FE671B5ADF78C3966 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A5E768986336186C6C266D0E2752 /* ActivityIndicator.swift */; };
+		FD720EE47BCCBF0037C827AF151CF370 /* UIView+SafeAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37055DFB792016887630E692F0DFE732 /* UIView+SafeAnchors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8237AFE80736ACABB48F01D698A69D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CBE366D25C3692AAE548A9B678264C8;
+			remoteInfo = BulletinBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AA750A9EAADCEB5A82A19110360544 /* BLTNBackgroundViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNBackgroundViewStyle.swift; path = Sources/Appearance/BLTNBackgroundViewStyle.swift; sourceTree = "<group>"; };
+		0F21CD30E30BB8B44F62770626E93EFF /* Pods-MyNotesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNotesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		11032F748ED7661BE342DE730CC6B349 /* BulletinSwipeInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinSwipeInteractionController.swift; path = Sources/Support/Animations/BulletinSwipeInteractionController.swift; sourceTree = "<group>"; };
+		12B35805363CA158A44CF227FE8B51B4 /* BLTNHighlightButtonWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNHighlightButtonWrapper.swift; path = Sources/Support/Views/Public/BLTNHighlightButtonWrapper.swift; sourceTree = "<group>"; };
+		15217F60CF5E1948A68B38669665BA43 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
+		164FC562F770610F732202482D6C9FB6 /* BLTNTitleLabelContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNTitleLabelContainer.swift; path = Sources/Support/Views/Public/BLTNTitleLabelContainer.swift; sourceTree = "<group>"; };
+		1ABA90730DC9E389A0843C786414D75F /* BLTNContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNContainerView.swift; path = Sources/Support/Views/Public/BLTNContainerView.swift; sourceTree = "<group>"; };
+		1AF792679CEEBE536025910D019BD81D /* Pods-MyNotesApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyNotesApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		236D2ABD4AF234352674038E6B55A45E /* Pods-MyNotesApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNotesApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		2482A19FFCE03351FE3624DC6E94E936 /* BLTNPageItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTNPageItem.h; path = Sources/Models/BLTNPageItem.h; sourceTree = "<group>"; };
+		2EDA1A05200656FC329C30C0752A546A /* BulletinPresentationAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinPresentationAnimationController.swift; path = Sources/Support/Animations/BulletinPresentationAnimationController.swift; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3192396ECD49EDA815E52AAE20A9DA29 /* BLTNItemAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNItemAppearance.swift; path = Sources/Appearance/BLTNItemAppearance.swift; sourceTree = "<group>"; };
+		33BB33DBA8F0F0829628EA0648DFCB3E /* RoundedViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedViewProtocol.swift; path = Sources/Support/Views/Internal/ContinuousCorners/RoundedViewProtocol.swift; sourceTree = "<group>"; };
+		357DF41502A15852C7F1B8944A375F8A /* Pods-MyNotesApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNotesApp-Info.plist"; sourceTree = "<group>"; };
+		37055DFB792016887630E692F0DFE732 /* UIView+SafeAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SafeAnchors.swift"; path = "Sources/Support/Helpers/UIView+SafeAnchors.swift"; sourceTree = "<group>"; };
+		388D85E2CEEDC8DF187A19B7CCB80412 /* BulletinBoard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulletinBoard-prefix.pch"; sourceTree = "<group>"; };
+		395D563B8CE93801FF8814346BCCE99A /* BulletinViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinViewController.swift; path = Sources/Support/BulletinViewController.swift; sourceTree = "<group>"; };
+		3EF1C5770DD82BE8FDB837D07E608BFA /* BulletinBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BulletinBoard.release.xcconfig; sourceTree = "<group>"; };
+		434160C8D76929631829D263CF002083 /* BulletinBoard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BulletinBoard.modulemap; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C8D2148EC5F9271BDE614DD4349E6D6 /* Pods-MyNotesApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyNotesApp-frameworks.sh"; sourceTree = "<group>"; };
+		62672E1D5BB7DC2D37FF4FF541D7C55D /* BLTNViewPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNViewPosition.swift; path = Sources/Appearance/BLTNViewPosition.swift; sourceTree = "<group>"; };
+		6628238860AD368BF794F8A35EF76030 /* BLTNInterfaceBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNInterfaceBuilder.swift; path = Sources/Appearance/BLTNInterfaceBuilder.swift; sourceTree = "<group>"; };
+		748034D8F81634460179D142CD6B93C2 /* BLTNActionItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLTNActionItem.m; path = Sources/Models/BLTNActionItem.m; sourceTree = "<group>"; };
+		7542C6DB4091D1B5A745F06B50A266F6 /* BulletinDismissAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinDismissAnimationController.swift; path = Sources/Support/Animations/BulletinDismissAnimationController.swift; sourceTree = "<group>"; };
+		77321C17C1A45F28660A194EA928EEBF /* BulletinCloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinCloseButton.swift; path = Sources/Support/Views/Internal/BulletinCloseButton.swift; sourceTree = "<group>"; };
+		77D3FECB33B67E5C08DD93D02AB1C616 /* UIView+RoundedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RoundedView.swift"; path = "Sources/Support/Views/Internal/ContinuousCorners/UIView+RoundedView.swift"; sourceTree = "<group>"; };
+		77E855AC8AAAA1430FACBF01C989D5E4 /* Pods-MyNotesApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyNotesApp-umbrella.h"; sourceTree = "<group>"; };
+		7E7B6CA3BB86B0D09785FB50342DBD3E /* Pods_MyNotesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyNotesApp.framework; path = "Pods-MyNotesApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		849709B51088840C2D83AC86C57F6C0A /* UIButton+BackgroundColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+BackgroundColor.swift"; path = "Sources/Support/Helpers/UIButton+BackgroundColor.swift"; sourceTree = "<group>"; };
+		8A0AA61B2C90DC0356DB886472C62AB4 /* BLTNPageItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLTNPageItem.m; path = Sources/Models/BLTNPageItem.m; sourceTree = "<group>"; };
+		90DECDC84112CD9322BFAC65FB2C806B /* BulletinBoard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulletinBoard-umbrella.h"; sourceTree = "<group>"; };
+		945C9727F4117B19DEE50B193DEEDA9D /* BulletinBoard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BulletinBoard-Info.plist"; sourceTree = "<group>"; };
+		97338F27188DFE58E37073C586EFF9B0 /* BLTNItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTNItem.h; path = Sources/Models/BLTNItem.h; sourceTree = "<group>"; };
+		980AF7F4A1EA6F917F6EEC3F4D63EAB7 /* Pods-MyNotesApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyNotesApp.modulemap"; sourceTree = "<group>"; };
+		9CF5A5E768986336186C6C266D0E2752 /* ActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Sources/Support/Views/Internal/ActivityIndicator.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E52A9EF375A13FF3657126F1D937FCA /* BLTNItemManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNItemManager.swift; path = Sources/BLTNItemManager.swift; sourceTree = "<group>"; };
+		A1E11D87BF6418B4AB3E645BEC726E63 /* ContinuousMaskLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContinuousMaskLayer.swift; path = Sources/Support/Views/Internal/ContinuousCorners/ContinuousMaskLayer.swift; sourceTree = "<group>"; };
+		B11FD27C957B2464B5358A137FA48C4D /* BulletinBoard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BulletinBoard-dummy.m"; sourceTree = "<group>"; };
+		C4BB947355FECA0EE8AA5D6339A49014 /* UIColor+Luminance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Luminance.swift"; path = "Sources/Support/Helpers/UIColor+Luminance.swift"; sourceTree = "<group>"; };
+		C5FC4EC27B0970F708A6473BCFDA3C50 /* BLTNBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLTNBoard.framework; path = BulletinBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DB8F69FE47A962FA97AABCCFBD0126 /* Pods-MyNotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNotesApp.release.xcconfig"; sourceTree = "<group>"; };
+		CD1923179EF08F0572CC83D5457BABDD /* BulletinBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinBackgroundView.swift; path = Sources/Support/Views/Internal/BulletinBackgroundView.swift; sourceTree = "<group>"; };
+		CFED091A88CAB38E25EBB9D2DE0434E1 /* BulletinBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BulletinBoard.debug.xcconfig; sourceTree = "<group>"; };
+		D34BDCD3E18DEB43E699252B0E24BE50 /* HighlightButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HighlightButton.swift; path = Sources/Support/Views/Internal/HighlightButton.swift; sourceTree = "<group>"; };
+		D9B30EE9AEC8A462CB8DC4061B722770 /* Pods-MyNotesApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNotesApp-dummy.m"; sourceTree = "<group>"; };
+		DB7B545A9C39A19FC7D23EB6BEF2EEE0 /* BLTNBoardSwiftSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTNBoardSwiftSupport.h; path = Sources/Support/BLTNBoardSwiftSupport.h; sourceTree = "<group>"; };
+		E5E6144202253562F0D966F49F3D7114 /* AnimationChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationChain.swift; path = Sources/Support/Animations/AnimationChain.swift; sourceTree = "<group>"; };
+		EA6BCBF7F7203F9C9C6A09BD1BAEDD1A /* BLTNActionItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTNActionItem.h; path = Sources/Models/BLTNActionItem.h; sourceTree = "<group>"; };
+		F3DA6A115E42298867AAF0048551D4EB /* Highlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Highlighter.swift; path = Sources/Support/Views/Internal/Highlighter.swift; sourceTree = "<group>"; };
+		FB99702CC706D335C33454ACF02EA3B2 /* BLTNBoard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTNBoard.h; path = Sources/BLTNBoard.h; sourceTree = "<group>"; };
+		FEF15591161B871C2201CE56F4AEB529 /* BLTNSpacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNSpacing.swift; path = Sources/Appearance/BLTNSpacing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22BCDD6757560B3D3E8DDBD448315EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945A85369DABA8A7BE6194C80A17D092 /* Foundation.framework in Frameworks */,
+				DA980ABCEA3D7F601A70E6A3B54FA797 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A801E6620A48BA80924248F93D0E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B179826AFB27ADA71FD30F38592B7B62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		128FC363E5E66C5C9260DC94937619E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81923BDFA5D9B435E3A903233DDBD468 /* BulletinBoard */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C81B407222501709A3D66B1A3CCC2DC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B20C81F597E3B63F7CC3E484FF9215 /* Pods-MyNotesApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		58490867AE3902B6B8F74D9146C9671A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5FC4EC27B0970F708A6473BCFDA3C50 /* BLTNBoard.framework */,
+				7E7B6CA3BB86B0D09785FB50342DBD3E /* Pods_MyNotesApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76B20C81F597E3B63F7CC3E484FF9215 /* Pods-MyNotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				980AF7F4A1EA6F917F6EEC3F4D63EAB7 /* Pods-MyNotesApp.modulemap */,
+				1AF792679CEEBE536025910D019BD81D /* Pods-MyNotesApp-acknowledgements.markdown */,
+				236D2ABD4AF234352674038E6B55A45E /* Pods-MyNotesApp-acknowledgements.plist */,
+				D9B30EE9AEC8A462CB8DC4061B722770 /* Pods-MyNotesApp-dummy.m */,
+				5C8D2148EC5F9271BDE614DD4349E6D6 /* Pods-MyNotesApp-frameworks.sh */,
+				357DF41502A15852C7F1B8944A375F8A /* Pods-MyNotesApp-Info.plist */,
+				77E855AC8AAAA1430FACBF01C989D5E4 /* Pods-MyNotesApp-umbrella.h */,
+				0F21CD30E30BB8B44F62770626E93EFF /* Pods-MyNotesApp.debug.xcconfig */,
+				C9DB8F69FE47A962FA97AABCCFBD0126 /* Pods-MyNotesApp.release.xcconfig */,
+			);
+			name = "Pods-MyNotesApp";
+			path = "Target Support Files/Pods-MyNotesApp";
+			sourceTree = "<group>";
+		};
+		81923BDFA5D9B435E3A903233DDBD468 /* BulletinBoard */ = {
+			isa = PBXGroup;
+			children = (
+				9CF5A5E768986336186C6C266D0E2752 /* ActivityIndicator.swift */,
+				E5E6144202253562F0D966F49F3D7114 /* AnimationChain.swift */,
+				EA6BCBF7F7203F9C9C6A09BD1BAEDD1A /* BLTNActionItem.h */,
+				748034D8F81634460179D142CD6B93C2 /* BLTNActionItem.m */,
+				03AA750A9EAADCEB5A82A19110360544 /* BLTNBackgroundViewStyle.swift */,
+				FB99702CC706D335C33454ACF02EA3B2 /* BLTNBoard.h */,
+				DB7B545A9C39A19FC7D23EB6BEF2EEE0 /* BLTNBoardSwiftSupport.h */,
+				1ABA90730DC9E389A0843C786414D75F /* BLTNContainerView.swift */,
+				12B35805363CA158A44CF227FE8B51B4 /* BLTNHighlightButtonWrapper.swift */,
+				6628238860AD368BF794F8A35EF76030 /* BLTNInterfaceBuilder.swift */,
+				97338F27188DFE58E37073C586EFF9B0 /* BLTNItem.h */,
+				3192396ECD49EDA815E52AAE20A9DA29 /* BLTNItemAppearance.swift */,
+				9E52A9EF375A13FF3657126F1D937FCA /* BLTNItemManager.swift */,
+				2482A19FFCE03351FE3624DC6E94E936 /* BLTNPageItem.h */,
+				8A0AA61B2C90DC0356DB886472C62AB4 /* BLTNPageItem.m */,
+				FEF15591161B871C2201CE56F4AEB529 /* BLTNSpacing.swift */,
+				164FC562F770610F732202482D6C9FB6 /* BLTNTitleLabelContainer.swift */,
+				62672E1D5BB7DC2D37FF4FF541D7C55D /* BLTNViewPosition.swift */,
+				CD1923179EF08F0572CC83D5457BABDD /* BulletinBackgroundView.swift */,
+				77321C17C1A45F28660A194EA928EEBF /* BulletinCloseButton.swift */,
+				7542C6DB4091D1B5A745F06B50A266F6 /* BulletinDismissAnimationController.swift */,
+				2EDA1A05200656FC329C30C0752A546A /* BulletinPresentationAnimationController.swift */,
+				11032F748ED7661BE342DE730CC6B349 /* BulletinSwipeInteractionController.swift */,
+				395D563B8CE93801FF8814346BCCE99A /* BulletinViewController.swift */,
+				A1E11D87BF6418B4AB3E645BEC726E63 /* ContinuousMaskLayer.swift */,
+				15217F60CF5E1948A68B38669665BA43 /* Deprecations.swift */,
+				D34BDCD3E18DEB43E699252B0E24BE50 /* HighlightButton.swift */,
+				F3DA6A115E42298867AAF0048551D4EB /* Highlighter.swift */,
+				33BB33DBA8F0F0829628EA0648DFCB3E /* RoundedViewProtocol.swift */,
+				849709B51088840C2D83AC86C57F6C0A /* UIButton+BackgroundColor.swift */,
+				C4BB947355FECA0EE8AA5D6339A49014 /* UIColor+Luminance.swift */,
+				77D3FECB33B67E5C08DD93D02AB1C616 /* UIView+RoundedView.swift */,
+				37055DFB792016887630E692F0DFE732 /* UIView+SafeAnchors.swift */,
+				F95372883F476146E551E30E4FFC3BD2 /* Support Files */,
+			);
+			name = BulletinBoard;
+			path = BulletinBoard;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				128FC363E5E66C5C9260DC94937619E4 /* Pods */,
+				58490867AE3902B6B8F74D9146C9671A /* Products */,
+				4C81B407222501709A3D66B1A3CCC2DC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F95372883F476146E551E30E4FFC3BD2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				434160C8D76929631829D263CF002083 /* BulletinBoard.modulemap */,
+				B11FD27C957B2464B5358A137FA48C4D /* BulletinBoard-dummy.m */,
+				945C9727F4117B19DEE50B193DEEDA9D /* BulletinBoard-Info.plist */,
+				388D85E2CEEDC8DF187A19B7CCB80412 /* BulletinBoard-prefix.pch */,
+				90DECDC84112CD9322BFAC65FB2C806B /* BulletinBoard-umbrella.h */,
+				CFED091A88CAB38E25EBB9D2DE0434E1 /* BulletinBoard.debug.xcconfig */,
+				3EF1C5770DD82BE8FDB837D07E608BFA /* BulletinBoard.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BulletinBoard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A70D49D613E36DC55754564455A17EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D00AC51376EE30DC96D3ED05E244DE /* Pods-MyNotesApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97347439E99E0A3831F081EEBD9AFC77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3ABFAD7435D909018A4E7A40AE6CE9 /* BLTNActionItem.h in Headers */,
+				439C665A5CEE744E7F34A98885BEF2F8 /* BLTNBoard.h in Headers */,
+				ACC16F054AA6667EF0CC93F5095A584D /* BLTNBoardSwiftSupport.h in Headers */,
+				C40599C5A913BB2AB363C96DF5F91964 /* BLTNItem.h in Headers */,
+				D5C9BC39F2D7C846D96354CF9D7C4094 /* BLTNPageItem.h in Headers */,
+				18E7B3199DE5A2E0368B99ED9B4E14F6 /* BulletinBoard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CBE366D25C3692AAE548A9B678264C8 /* BulletinBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9C0CF76461407C567CACE0D88D1880 /* Build configuration list for PBXNativeTarget "BulletinBoard" */;
+			buildPhases = (
+				97347439E99E0A3831F081EEBD9AFC77 /* Headers */,
+				C167948003AB77DFDDE7F5B4A3A2092D /* Sources */,
+				22BCDD6757560B3D3E8DDBD448315EF2 /* Frameworks */,
+				0349A53936E530FEE441CF54D912E3BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BulletinBoard;
+			productName = BulletinBoard;
+			productReference = C5FC4EC27B0970F708A6473BCFDA3C50 /* BLTNBoard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73BCF61F6A2C14C8FF6A80EEC691BFA0 /* Pods-MyNotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA27F9E169A3E83F9553DCA14E47B5F /* Build configuration list for PBXNativeTarget "Pods-MyNotesApp" */;
+			buildPhases = (
+				0A70D49D613E36DC55754564455A17EE /* Headers */,
+				D1E5595532D2858A6E1CAB2F467027AF /* Sources */,
+				50A801E6620A48BA80924248F93D0E28 /* Frameworks */,
+				ABC7F46FD8C60B6A7C3573F7C6AC2E90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70B1D031EDB0339157045F15A49C5FD2 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyNotesApp";
+			productName = "Pods-MyNotesApp";
+			productReference = 7E7B6CA3BB86B0D09785FB50342DBD3E /* Pods_MyNotesApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 58490867AE3902B6B8F74D9146C9671A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CBE366D25C3692AAE548A9B678264C8 /* BulletinBoard */,
+				73BCF61F6A2C14C8FF6A80EEC691BFA0 /* Pods-MyNotesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0349A53936E530FEE441CF54D912E3BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC7F46FD8C60B6A7C3573F7C6AC2E90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C167948003AB77DFDDE7F5B4A3A2092D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2330AAF538DD08FE671B5ADF78C3966 /* ActivityIndicator.swift in Sources */,
+				93F685CD37274E9DF70B70566F99FC5C /* AnimationChain.swift in Sources */,
+				D92787F77BF0086D7ED23BCEF184307D /* BLTNActionItem.m in Sources */,
+				900F1464C2EA7D032A785BA93999C235 /* BLTNBackgroundViewStyle.swift in Sources */,
+				B6D65F143AE951F748E8B8D4471B3F91 /* BLTNContainerView.swift in Sources */,
+				C7879C94CA800A001DD43C22EA4F62A2 /* BLTNHighlightButtonWrapper.swift in Sources */,
+				0E58765E9B4CA4CBA152D421051F013A /* BLTNInterfaceBuilder.swift in Sources */,
+				62640011D5A5D894423FA3B5EA5FEAA9 /* BLTNItemAppearance.swift in Sources */,
+				D4CB0DA440FBBCE3CD22C13D2D080D37 /* BLTNItemManager.swift in Sources */,
+				15E1CBC183FA9F6508D3D84B66B2500D /* BLTNPageItem.m in Sources */,
+				B3DFBFD0EECA669AE228F1AD4476DAB6 /* BLTNSpacing.swift in Sources */,
+				571346491E2824CF44B25E05FFAF1D9F /* BLTNTitleLabelContainer.swift in Sources */,
+				0C69FD195D927D5F6641888DF202B847 /* BLTNViewPosition.swift in Sources */,
+				3283F90166502961B53731378738EA3B /* BulletinBackgroundView.swift in Sources */,
+				74FD6A05A24AFE1E0C73E34D1D82D9DE /* BulletinBoard-dummy.m in Sources */,
+				71829594D237F34FEB68ACF17D8F5645 /* BulletinCloseButton.swift in Sources */,
+				8A4D255E3E497EF4C37546784F2D1A7A /* BulletinDismissAnimationController.swift in Sources */,
+				5FECA57AEDE80F52C4B5325D6CE72191 /* BulletinPresentationAnimationController.swift in Sources */,
+				E3623B4C7E23FA2B372F95CE35808EC4 /* BulletinSwipeInteractionController.swift in Sources */,
+				391166A441512089CDABF69232E956FF /* BulletinViewController.swift in Sources */,
+				562E6945D03B9AE27D800BF66D6E1CBD /* ContinuousMaskLayer.swift in Sources */,
+				9F840081416C87E400CBEC963E25027B /* Deprecations.swift in Sources */,
+				C2DCEF4BC71E94EBFA2E365BA8D8DB00 /* HighlightButton.swift in Sources */,
+				938B54EF8194498DEBE3145404218AE4 /* Highlighter.swift in Sources */,
+				EF27BA53D1142A338B6528D46CE043D3 /* RoundedViewProtocol.swift in Sources */,
+				29CD13DA82635EB3264267DFA876D697 /* UIButton+BackgroundColor.swift in Sources */,
+				81A992E652B895058A5C5E6CBF91B479 /* UIColor+Luminance.swift in Sources */,
+				2AAFDD22688A0E48D51728131119FAB0 /* UIView+RoundedView.swift in Sources */,
+				FD720EE47BCCBF0037C827AF151CF370 /* UIView+SafeAnchors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E5595532D2858A6E1CAB2F467027AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03EE07A4CE175F2BB09C90DAB03AF22 /* Pods-MyNotesApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70B1D031EDB0339157045F15A49C5FD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BulletinBoard;
+			target = 3CBE366D25C3692AAE548A9B678264C8 /* BulletinBoard */;
+			targetProxy = B8237AFE80736ACABB48F01D698A69D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DF1978ADFAA79C74B9F84708DC347D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF1C5770DD82BE8FDB837D07E608BFA /* BulletinBoard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BulletinBoard/BulletinBoard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BulletinBoard/BulletinBoard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BulletinBoard/BulletinBoard.modulemap";
+				PRODUCT_MODULE_NAME = BLTNBoard;
+				PRODUCT_NAME = BLTNBoard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69D8951F21F7AD8636651F1E7EB4F20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F21CD30E30BB8B44F62770626E93EFF /* Pods-MyNotesApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		771FD142C23737D7CDBFEA2522388CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DB8F69FE47A962FA97AABCCFBD0126 /* Pods-MyNotesApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNotesApp/Pods-MyNotesApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E29296D723BB02D67E98070A28B3ECF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFED091A88CAB38E25EBB9D2DE0434E1 /* BulletinBoard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BulletinBoard/BulletinBoard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BulletinBoard/BulletinBoard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BulletinBoard/BulletinBoard.modulemap";
+				PRODUCT_MODULE_NAME = BLTNBoard;
+				PRODUCT_NAME = BLTNBoard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA27F9E169A3E83F9553DCA14E47B5F /* Build configuration list for PBXNativeTarget "Pods-MyNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D8951F21F7AD8636651F1E7EB4F20D /* Debug */,
+				771FD142C23737D7CDBFEA2522388CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF9C0CF76461407C567CACE0D88D1880 /* Build configuration list for PBXNativeTarget "BulletinBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29296D723BB02D67E98070A28B3ECF7 /* Debug */,
+				10DF1978ADFAA79C74B9F84708DC347D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

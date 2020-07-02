@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var themeButton: UIButton!
     @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var addNoteButton: UIButton!
     @IBOutlet weak var floatingButton: UIButton!
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
         self.buttonView.layer.cornerRadius = 170.0
         self.addNoteButton.transform = CGAffineTransform(translationX: 15, y: 15)
         self.notificationButton.transform = CGAffineTransform(translationX: 15, y: 15)
+        self.themeButton.transform = CGAffineTransform(translationX: 15, y: 15)
     }
     
     //function to setUp CoreData
@@ -92,6 +94,11 @@ class ViewController: UIViewController {
                 self.notificationButton.transform = CGAffineTransform(translationX: 15, y: 15)
             } else {
                 self.notificationButton.transform = .identity
+            }
+            if(self.themeButton?.transform == .identity) {
+                self.themeButton.transform = CGAffineTransform(translationX: 15, y: 15)
+            } else {
+                self.themeButton.transform = .identity
             }
         }, completion: nil)
     }
