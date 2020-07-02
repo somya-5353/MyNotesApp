@@ -27,15 +27,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4H-Vb-Dff">
-                                        <rect key="frame" x="300" y="767" width="84" height="84"/>
+                                        <rect key="frame" x="324" y="791" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="84" id="TWU-6N-OAC"/>
-                                            <constraint firstAttribute="width" constant="84" id="Wb7-oj-lIg"/>
+                                            <constraint firstAttribute="height" constant="60" id="TWU-6N-OAC"/>
+                                            <constraint firstAttribute="width" constant="60" id="Wb7-oj-lIg"/>
                                         </constraints>
                                         <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" backgroundImage="floatingButton">
+                                        <state key="normal" image="floatingButton">
                                             <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onTapFloatingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="faa-ma-1kG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60474636130136983" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,6 +67,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="mjR-ao-mHW"/>
+                    <connections>
+                        <outlet property="floatingButton" destination="C4H-Vb-Dff" id="ml2-YO-ZLn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

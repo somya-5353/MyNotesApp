@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var coreDataManager = CoreDataManager(modelName: "Notes")
     
+    
+    @IBOutlet weak var floatingButton: UIButton!
+    
+    private var coreDataManager = CoreDataManager(modelName: "Notes")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +43,40 @@ class ViewController: UIViewController {
             } catch {
                 print("Unable to save managed object context!")
             }
-     }
+       }
+   }
+   
+    func beginTracking() {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            if(self.floatingButton.alpha == 1) {
+            self.floatingButton.alpha = 0.7
+            } else {
+                self.floatingButton.alpha = 1
+            }
+            if(self.floatingButton.transform == .identity) {
+            self.floatingButton.transform = CGAffineTransform(rotationAngle: 45 * (.pi/180))
+            } else {
+                self.floatingButton.transform = .identity
+            }
+        })
+        
+    }
     
-  }
-
+    func endTracking() {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.floatingButton.alpha = 1
+        })
+        print(self.floatingButton.state)
+        self.floatingButton.setImage(UIImage(named: "cross"), for: .normal)
+    }
+    
+    @IBAction func onTapFloatingButton(_ sender: Any) {
+        
+        self.beginTracking()
+        
+    }
+    
+    
 }
