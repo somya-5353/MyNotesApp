@@ -26,6 +26,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9d-2g-lZ3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0R-Zt-FXg">
+                                        <rect key="frame" x="207" y="703" width="340" height="340"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4H-Vb-Dff">
                                         <rect key="frame" x="324" y="791" width="60" height="60"/>
                                         <constraints>
@@ -68,6 +73,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mjR-ao-mHW"/>
                     <connections>
+                        <outlet property="buttonView" destination="n0R-Zt-FXg" id="HOT-dr-sMO"/>
                         <outlet property="floatingButton" destination="C4H-Vb-Dff" id="ml2-YO-ZLn"/>
                     </connections>
                 </viewController>

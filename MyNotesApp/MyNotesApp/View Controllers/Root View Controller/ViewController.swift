@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var buttonView: UIView!
     
     @IBOutlet weak var floatingButton: UIButton!
     
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.buttonView.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
+        self.buttonView.layer.cornerRadius = 170.0
         self.setCoreData()
     }
 
@@ -46,6 +49,13 @@ class ViewController: UIViewController {
        }
    }
    
+    func animateView(isHidden: Bool) {
+        
+        UIView.animate(withDuration: 0.3, delay: 0.05, options: .curveEaseOut, animations: {
+            self.buttonView.isHidden = isHidden
+        }, completion: nil)
+    }
+    
     func beginTracking() {
         
         UIView.animate(withDuration: 0.3, animations: {
@@ -56,8 +66,10 @@ class ViewController: UIViewController {
             }
             if(self.floatingButton.transform == .identity) {
             self.floatingButton.transform = CGAffineTransform(rotationAngle: 45 * (.pi/180))
+                self.buttonView.transform = .identity
             } else {
                 self.floatingButton.transform = .identity
+                self.buttonView.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
             }
         })
         
