@@ -36,6 +36,9 @@
                                                     <constraint firstAttribute="height" constant="30" id="yLS-jv-VMN"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="pencil"/>
+                                                <connections>
+                                                    <action selector="onTapAddNoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7U-P6-M5d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugI-X4-b2f">
                                                 <rect key="frame" x="47" y="120" width="25" height="25"/>
@@ -89,21 +92,32 @@
                                     <constraint firstItem="n0R-Zt-FXg" firstAttribute="top" secondItem="j9d-2g-lZ3" secondAttribute="top" constant="703" id="fOh-iO-QCo"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSh-Nv-qb8" customClass="InputView" customModule="MyNotesApp" customModuleProvider="target">
+                                <rect key="frame" x="30" y="168" width="354" height="450"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="LnB-yV-New"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6cq-J5-22x" firstAttribute="height" secondItem="J86-aq-UoQ" secondAttribute="height" id="2z6-wn-Vji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zSh-Nv-qb8" secondAttribute="trailing" constant="30" id="5lz-va-9wZ"/>
+                            <constraint firstItem="zSh-Nv-qb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5qs-UF-JPC"/>
                             <constraint firstItem="J86-aq-UoQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Nx-sM-IrM"/>
                             <constraint firstItem="6cq-J5-22x" firstAttribute="width" secondItem="J86-aq-UoQ" secondAttribute="width" id="GSk-BL-AOM"/>
                             <constraint firstItem="6cq-J5-22x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UVH-XA-VRV"/>
                             <constraint firstItem="j9d-2g-lZ3" firstAttribute="height" secondItem="J86-aq-UoQ" secondAttribute="height" id="XAj-Ec-WUm"/>
                             <constraint firstItem="j9d-2g-lZ3" firstAttribute="width" secondItem="J86-aq-UoQ" secondAttribute="width" id="Z4l-hY-VMh"/>
+                            <constraint firstItem="zSh-Nv-qb8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="asT-Cp-Hso"/>
                             <constraint firstItem="J86-aq-UoQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jJL-th-rI4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J86-aq-UoQ" secondAttribute="trailing" id="ph2-TT-RwB"/>
                             <constraint firstAttribute="bottom" secondItem="J86-aq-UoQ" secondAttribute="bottom" id="qdD-7E-wJP"/>
                             <constraint firstItem="j9d-2g-lZ3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rQp-Rx-dW0"/>
                             <constraint firstItem="j9d-2g-lZ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sgB-ch-OT9"/>
                             <constraint firstItem="6cq-J5-22x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="umt-xI-M3D"/>
+                            <constraint firstItem="zSh-Nv-qb8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="wJn-XF-yKm"/>
                             <constraint firstItem="J86-aq-UoQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wcP-2b-yPB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -114,6 +128,7 @@
                         <outlet property="buttonView" destination="n0R-Zt-FXg" id="HOT-dr-sMO"/>
                         <outlet property="floatingButton" destination="C4H-Vb-Dff" id="ml2-YO-ZLn"/>
                         <outlet property="notificationButton" destination="ugI-X4-b2f" id="A20-m0-URF"/>
+                        <outlet property="takeNotes" destination="zSh-Nv-qb8" id="Ibh-Cz-hQ9"/>
                         <outlet property="themeButton" destination="kck-9a-hnY" id="W0X-f9-Mu6"/>
                     </connections>
                 </viewController>

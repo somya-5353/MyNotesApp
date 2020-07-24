@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+
+    @IBOutlet var takeNotes: InputView!
     @IBOutlet weak var themeButton: UIButton!
     @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var addNoteButton: UIButton!
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var notificationButton: UIButton!
     
     private var coreDataManager = CoreDataManager(modelName: "Notes")
+    var isTakeNotesVisible = false
     
     override func viewDidLoad() {
         
@@ -61,6 +63,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     func beginTracking() {
         
         UIView.animate(withDuration: 0.3, animations: {
@@ -83,7 +86,7 @@ class ViewController: UIViewController {
     
     func animateMenuButtons() {
         
-        UIView.animate(withDuration: 0.5, delay: 0.25, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
+        UIView.animate(withDuration: 1, delay: 0.25, usingSpringWithDamping: 0.1, initialSpringVelocity: 0.5, options: [], animations: {
             
             if(self.addNoteButton?.transform == .identity) {
                 self.addNoteButton.transform = CGAffineTransform(translationX: 15, y: 15)
@@ -110,4 +113,13 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func onTapAddNoteButton(_ sender: Any) {
+        
+        self.isTakeNotesVisible = !self.isTakeNotesVisible
+        if isTakeNotesVisible {
+         self.view.bringSubviewToFront(takeNotes)
+        } else {
+            self.view.sendSubviewToBack(takeNotes)
+        }
+    }
 }
