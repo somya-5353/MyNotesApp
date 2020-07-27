@@ -10,7 +10,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="MyNotesApp" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="iN0-l3-epB" id="EXg-dQ-krK"/>
+                <outlet property="crossButton" destination="QLb-qm-nv2" id="fO7-V7-07B"/>
                 <outlet property="imageView" destination="nXB-H5-DMx" id="s8k-hq-LDC"/>
+                <outlet property="notesTextField" destination="jwp-uI-OkK" id="pNs-A1-x3D"/>
+                <outlet property="titleTextField" destination="yQp-Xg-kAy" id="9CT-gg-3gU"/>
                 <outlet property="topView" destination="zH7-np-n2k" id="eUq-4l-TbU"/>
             </connections>
         </placeholder>
@@ -19,19 +22,89 @@
             <rect key="frame" x="0.0" y="0.0" width="928" height="696"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note3" translatesAutoresizingMaskIntoConstraints="NO" id="nXB-H5-DMx">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note2" translatesAutoresizingMaskIntoConstraints="NO" id="nXB-H5-DMx">
                     <rect key="frame" x="0.0" y="0.0" width="928" height="696"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zH7-np-n2k">
                     <rect key="frame" x="0.0" y="0.0" width="928" height="696"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-v1-TSf">
-                            <rect key="frame" x="8" y="0.0" width="920" height="128"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-v1-TSf">
+                            <rect key="frame" x="0.0" y="0.0" width="928" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTo-KM-G5h">
+                                    <rect key="frame" x="364" y="0.0" width="200" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="5o3-vg-vcd"/>
+                                        <constraint firstAttribute="height" constant="60" id="lg6-vn-pOa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-qm-nv2">
+                                    <rect key="frame" x="604" y="20" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="XEQ-7q-D9f"/>
+                                        <constraint firstAttribute="height" constant="20" id="swa-y6-3Q6"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="cross1"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="7NK-Er-dlR"/>
+                                <constraint firstItem="pTo-KM-G5h" firstAttribute="centerX" secondItem="3Tg-v1-TSf" secondAttribute="centerX" id="WsV-XB-c1v"/>
+                                <constraint firstItem="pTo-KM-G5h" firstAttribute="centerY" secondItem="3Tg-v1-TSf" secondAttribute="centerY" id="bn2-Dr-ySr"/>
+                                <constraint firstItem="QLb-qm-nv2" firstAttribute="centerY" secondItem="3Tg-v1-TSf" secondAttribute="centerY" id="gEU-KJ-S1Q"/>
+                                <constraint firstItem="QLb-qm-nv2" firstAttribute="leading" secondItem="pTo-KM-G5h" secondAttribute="trailing" constant="40" id="wxY-g8-RCq"/>
+                            </constraints>
                         </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yQp-Xg-kAy">
+                            <rect key="frame" x="314" y="90" width="300" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="PmZ-of-nAl"/>
+                                <constraint firstAttribute="width" constant="300" id="eOl-rB-Rk0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                        </textField>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-uI-OkK">
+                            <rect key="frame" x="314" y="160" width="300" height="200"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="EQ0-Mk-9yd"/>
+                            </constraints>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW2-VC-fwJ">
+                            <rect key="frame" x="364" y="380" width="200" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="f8o-aa-Iz4"/>
+                                <constraint firstAttribute="height" constant="50" id="wid-SM-fgT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
+                            <state key="normal" title="Add">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.6971050941780822" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.8905179794520548" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pW2-VC-fwJ" firstAttribute="centerX" secondItem="zH7-np-n2k" secondAttribute="centerX" id="1Uj-Pt-W6x"/>
+                        <constraint firstItem="3Tg-v1-TSf" firstAttribute="top" secondItem="zH7-np-n2k" secondAttribute="top" id="24s-dw-5ND"/>
+                        <constraint firstItem="jwp-uI-OkK" firstAttribute="width" secondItem="yQp-Xg-kAy" secondAttribute="width" id="2Cz-be-o6u"/>
+                        <constraint firstItem="jwp-uI-OkK" firstAttribute="top" secondItem="yQp-Xg-kAy" secondAttribute="bottom" constant="20" id="5Ln-bc-4ue"/>
+                        <constraint firstItem="jwp-uI-OkK" firstAttribute="centerX" secondItem="zH7-np-n2k" secondAttribute="centerX" id="RRi-mv-hak"/>
+                        <constraint firstItem="3Tg-v1-TSf" firstAttribute="centerX" secondItem="zH7-np-n2k" secondAttribute="centerX" id="b6a-Md-CcP"/>
+                        <constraint firstItem="3Tg-v1-TSf" firstAttribute="leading" secondItem="zH7-np-n2k" secondAttribute="leading" id="hzn-1W-3VT"/>
+                        <constraint firstItem="yQp-Xg-kAy" firstAttribute="centerX" secondItem="zH7-np-n2k" secondAttribute="centerX" id="qNt-Rj-XiN"/>
+                        <constraint firstItem="yQp-Xg-kAy" firstAttribute="top" secondItem="3Tg-v1-TSf" secondAttribute="bottom" constant="30" id="sXc-vy-4w9"/>
+                        <constraint firstItem="pW2-VC-fwJ" firstAttribute="top" secondItem="jwp-uI-OkK" secondAttribute="bottom" constant="20" id="uuN-vU-v9x"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,6 +126,7 @@
         </view>
     </objects>
     <resources>
-        <image name="note3" width="960" height="722"/>
+        <image name="cross1" width="200" height="200"/>
+        <image name="note2" width="960" height="960"/>
     </resources>
 </document>

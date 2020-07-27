@@ -57,7 +57,7 @@
                                                 <state key="normal" title="Button" image="theme"/>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="cSt-TX-gxL" firstAttribute="top" secondItem="n0R-Zt-FXg" secondAttribute="top" constant="25" id="2bU-eE-lPj"/>
                                             <constraint firstItem="kck-9a-hnY" firstAttribute="top" secondItem="n0R-Zt-FXg" secondAttribute="top" constant="62" id="3jW-C3-cjm"/>
@@ -93,10 +93,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSh-Nv-qb8" customClass="InputView" customModule="MyNotesApp" customModuleProvider="target">
-                                <rect key="frame" x="30" y="168" width="354" height="450"/>
+                                <rect key="frame" x="30" y="118" width="354" height="500"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="LnB-yV-New"/>
+                                    <constraint firstAttribute="height" constant="500" id="LnB-yV-New"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -110,7 +110,7 @@
                             <constraint firstItem="6cq-J5-22x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UVH-XA-VRV"/>
                             <constraint firstItem="j9d-2g-lZ3" firstAttribute="height" secondItem="J86-aq-UoQ" secondAttribute="height" id="XAj-Ec-WUm"/>
                             <constraint firstItem="j9d-2g-lZ3" firstAttribute="width" secondItem="J86-aq-UoQ" secondAttribute="width" id="Z4l-hY-VMh"/>
-                            <constraint firstItem="zSh-Nv-qb8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="asT-Cp-Hso"/>
+                            <constraint firstItem="zSh-Nv-qb8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="asT-Cp-Hso"/>
                             <constraint firstItem="J86-aq-UoQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jJL-th-rI4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J86-aq-UoQ" secondAttribute="trailing" id="ph2-TT-RwB"/>
                             <constraint firstAttribute="bottom" secondItem="J86-aq-UoQ" secondAttribute="bottom" id="qdD-7E-wJP"/>

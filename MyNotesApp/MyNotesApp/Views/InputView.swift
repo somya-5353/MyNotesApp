@@ -10,6 +10,9 @@ import UIKit
 
 class InputView: UIView {
 
+    @IBOutlet weak var notesTextField: UITextView!
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var crossButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var topView: UIView!
@@ -37,5 +40,6 @@ class InputView: UIView {
           containerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
       }
       
+    
 }
 
