@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="MyNotesApp" customModuleProvider="target">
             <connections>
+                <outlet property="addButton" destination="pW2-VC-fwJ" id="4Ds-Ik-Foj"/>
                 <outlet property="containerView" destination="iN0-l3-epB" id="EXg-dQ-krK"/>
                 <outlet property="crossButton" destination="QLb-qm-nv2" id="fO7-V7-07B"/>
                 <outlet property="imageView" destination="nXB-H5-DMx" id="s8k-hq-LDC"/>

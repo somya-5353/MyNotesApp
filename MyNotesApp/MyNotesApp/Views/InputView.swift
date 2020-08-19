@@ -17,6 +17,7 @@ class InputView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var topView: UIView!
 
+    @IBOutlet weak var addButton: UIButton!
     
     override func draw(_ rect: CGRect) {
         // Drawing code

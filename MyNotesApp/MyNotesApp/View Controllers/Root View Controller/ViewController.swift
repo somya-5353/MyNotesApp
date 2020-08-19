@@ -25,8 +25,10 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         takeNotes?.crossButton?.addTarget(self, action: #selector(ViewController.onTapCrossButton(btn:)), for: .touchUpInside)
-        takeNotes?.titleTextField?.delegate = (self as! UITextFieldDelegate)
-        takeNotes?.titleTextField?.becomeFirstResponder()
+        takeNotes?.addButton?.addTarget(self, action: (ViewController.onTapAddButton(btn:)), for: .touchUpInside)
+        takeNotes?.titleTextField?.delegate = (self as UITextFieldDelegate)
+        takeNotes?.notesTextField?.delegate = self
+       // takeNotes?.titleTextField?.becomeFirstResponder()
         self.setUpButtonMenu()
         self.setCoreData()
     }
@@ -39,12 +41,14 @@ class ViewController: UIViewController {
     }
     
     
+    //function to dismiss takeNotes View on 
+    
     //function to dismiss takeNotes View on tapping cross Button
     @objc func onTapCrossButton(btn: UIButton) {
         
         if let visibility = self.isTakeNotesVisible {
             self.isTakeNotesVisible = !(self.isTakeNotesVisible ?? false)
-         self.view.sendSubviewToBack(takeNotes)
+            self.view.sendSubviewToBack(takeNotes)
         }
     }
     
@@ -150,6 +154,22 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        
+        return true
+    }
+}
+
+extension ViewController: UITextViewDelegate {
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
         return true
     }
 }
